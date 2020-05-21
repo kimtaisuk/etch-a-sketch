@@ -129,6 +129,11 @@ function canvasMaker() {
         singleGrid.addEventListener('mouseover',hoverGridBW);
         singleGrid.addEventListener('mouseover',hoverGridBlack10);
         singleGrid.addEventListener('mouseover',hoverGridRandomColor);
+
+        // For mobile
+        singleGrid.addEventListener('touchstart',hoverGridBW);
+        singleGrid.addEventListener('touchstart',hoverGridBlack10);
+        singleGrid.addEventListener('touchstart',hoverGridRandomColor);
     
     }
     
