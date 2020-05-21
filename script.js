@@ -28,10 +28,10 @@ makeCanvasBtn.onclick = function() {
 }
 
 function gridNumberPrompt() {
-    let gridNumber = Number(window.prompt("Enter the number of grid upto 512", 16)); //16 Grids by Default
+    let gridNumber = Number(window.prompt("Enter the number of grids, up to 128", 16)); //16 Grids by Default
     while (gridNumber >= 129 || !Number.isInteger(gridNumber)) {
-        alert("Grid Number must be an integer smaller than or equal to 128")
-        gridNumber = Number(window.prompt("Enter the number of grid again", 16));
+        alert("The number of grids must be an integer smaller than or equal to 128")
+        gridNumber = Number(window.prompt("Enter the number of grids again", 16));
 
     } 
     return gridNumber;
