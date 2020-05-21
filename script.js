@@ -15,16 +15,11 @@ makeCanvasBtn.onclick = function() {
     makeCanvasBtn.value="Restart Canvas"
     canvasMade = true;
     bwBtnClicked = true;
-
-    if (bwBtnClicked && canvasMade) {
-        bwBtn.classList.add('button-clicked'); 
-        b10Btn.classList.remove('button-clicked');
-        rcBtn.classList.remove('button-clicked');
-    }
-    else {
-        bwBtn.classList.remove('button-clicked');
-
-    }
+    b10BtnClicked = false;
+    rcBtnClicked = false;
+    b10Btn.classList.remove('button-clicked');
+    rcBtn.classList.remove('button-clicked');
+    bwBtn.classList.add('button-clicked'); 
 }
 
 function gridNumberPrompt() {
